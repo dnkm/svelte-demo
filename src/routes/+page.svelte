@@ -3,7 +3,6 @@
 
 	function increment() {
 		x++;
-		alert(x);
 	}
 </script>
 
