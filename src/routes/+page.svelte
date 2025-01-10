@@ -13,5 +13,5 @@
 <button
 	class="bg-slate-500 px-1 py-0.5 text-white hover:bg-yellow-500"
 	style="font-size: {x}px"
-	on:click={increment}>{x}</button
+	onclick={increment}>{x}</button
 >
