@@ -2,6 +2,8 @@
 	let { data } = $props();
 </script>
 
-<h1>{data.club?.name}</h1>
+<pre>{JSON.stringify(data)}</pre>
+<h1>{data.club?.id}</h1>
 
-<p>{data.club?.title}</p>
+<p>{data.club?.name}</p>
+<p>{data.club?.description}</p>

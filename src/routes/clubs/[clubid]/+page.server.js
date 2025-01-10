@@ -1,7 +1,10 @@
 import { clubs } from '$lib/clubs';
+import { supabase } from '$lib/supabaseClient';
 
-export function load({ params }) {
+export async function load({ params }) {
+  let { data } = await supabase.from("clubs").select("*").eq("id", params.clubid).maybeSingle()
+
   return ({
-    club: clubs.find(v => v.slug === params.clubid)
+    club: data
   })
 }
